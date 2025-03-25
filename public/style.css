@@ -1,0 +1,313 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-top: 0px; /* Add space below the fixed navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40 !important; /* Dark background */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4CAF50; /* Green hover effect */
+}
+
+/* Carousel Styling */
+#heroCarousel {
+    margin-top: 50px; /* Adds space for the fixed navbar */
+}
+
+.carousel-item {
+    height: 70vh; /* Make the carousel items a bit taller */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+}
+
+/* Card Styling for Product Sections */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Hover effect for cards */
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 280px;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Best Seller Section */
+.card-img-top {
+    object-fit: cover;
+    height: 280px;
+}
+
+.card-body .btn {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #45a049;
+}
+
+/* Special Card (Back in Stock) */
+.card-img-overlay {
+    position: absolute;
+    top: 50%; /* Vertical center */
+    left: 10px; /* Left side of the image */
+    transform: translateY(-50%); /* Center the text vertically */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top of the image */
+    max-width: 60%; /* Limit text width */
+}
+
+.card-img-overlay h5 {
+    font-size: 2.5rem; /* Larger for "Back in Stock!" */
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-img-overlay h5:nth-of-type(2) {
+    font-size: 2rem; /* Slightly smaller for product name */
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.card-img-overlay p {
+    font-size: 1rem; /* Larger description text */
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Align the SHOP NOW button below the description */
+.card-img-overlay .btn {
+    margin-top: 15px; /* Adds spacing below the description text */
+    font-size: 1rem;
+    padding: 0px 1px;
+    width: 124px;
+    background-color: #45a049; /* Bright Yellow Button */
+    color: #fff; /* Black text for contrast */
+    border: none;
+    border-radius: 5px;
+}
+
+.card-img-overlay h5, .card-img-overlay p {
+    color: #fff; /* Make text color more visible */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .card-img-overlay {
+        top: 30%; /* Adjust position for smaller screens */
+        left: 20px; /* Make text closer to the edge */
+        max-width: 80%; /* Allow more text width on smaller screens */
+    }
+
+    .card-img-overlay h5 {
+        font-size: 2rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .card-img-overlay h5:nth-of-type(2) {
+        font-size: 1.8rem; /* Adjust product name font size */
+    }
+
+    .card-img-overlay p {
+        font-size: 1.1rem; /* Adjust description text for smaller screens */
+    }
+
+    .card-img-overlay .btn {
+        font-size: 1rem; /* Adjust button size */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-overlay {
+        top: 20%; /* Even more adjustment for very small screens */
+        left: 15px;
+        max-width: 90%; /* Allow even more text width */
+    }
+
+    .card-img-overlay h5 {
+        font-size: 1.5rem; /* Further reduce the font size */
+    }
+
+    .card-img-overlay h5:nth-of-type(2) {
+        font-size: 1.3rem; /* Adjust product name size for very small screens */
+    }
+
+    .card-img-overlay p {
+        font-size: 1rem; /* Adjust description for small screens */
+    }
+
+    .card-img-overlay .btn {
+        align-self: flex-end; /* Moves the button to the right */
+        margin-top: auto; /* Pushes the button to the bottom if needed */
+    }
+    }
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    padding: 30px 0;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer .container {
+    max-width: 1100px;
+}
+
+footer .row {
+    text-align: left;
+}
+
+footer .row .col-md-4 {
+    margin-bottom: 20px;
+}
+
+footer hr {
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .carousel-caption h3 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-body .btn {
+        font-size: 1rem;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+    /* About Page Specific Styling */
+.about-header {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-introduction p {
+    font-size: 3rem;
+    line-height: 1.6;
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%; /* For a circular profile picture */
+}
+
+.about-section {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: black;
+}
+
+.about-section h2 {
+    font-family: cursive;
+    font-size: 2rem;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-mission p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.7;
+    color: #555;
+}
+}
